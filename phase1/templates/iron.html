@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.H.I.E.L.D. Secure Access</title>
+    <link rel="stylesheet" href="{% static 'css/iron.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="{% static 'images/shield_logo.png' %}" alt="S.H.I.E.L.D. Logo" class="logo">
+            <h1>S.H.I.E.L.D. OPERATIONS PORTAL</h1>
+            <p class="tagline">"Surveillance, Homeland Intervention, and Strategic Operations"</p>
+        </header>
+
+        <section class="main-content">
+            <h2>Welcome, Agent</h2>
+            <p>This portal is classified. Unauthorized access is prohibited. All activities are monitored and recorded.</p>
+
+            <div class="actions">
+                <button class="btn">Classified Files</button>
+                <button class="btn">Mission Briefings</button>
+                <button class="btn">Agent Database</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Strategic Homeland Intervention, Enforcement and Logistics Division</p>
+        </footer>
+    </div>
+</body>
+</html>

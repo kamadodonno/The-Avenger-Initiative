@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>S.H.I.L.D Search</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <section class="hero">
+        <h1> S . H . I . E . L . D </h1>
+        <p>Why you so dumb that you had to bring your stupid dumb ass here.</p>
+    </section>
+    
+    <form method="GET" action="{% url 'index' %}" class="search-form">
+        <input type="text" name="q" placeholder="Search..." class="search-input">
+        <button type="submit" class="search-button">Search</button>
+    </form>
+</body>
+</html>
